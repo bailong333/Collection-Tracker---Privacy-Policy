@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Tracker - Delete Account & Data</title>
+    <style>
+        body {
+            font-family: -apple-system, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1a73e8;
+            margin-top: 30px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .steps {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .steps ol {
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #1a73e8;
+        }
+        .email-link {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .data-table th {
+            background: #1a73e8;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Collection Tracker — Delete Account & Data</h1>
+
+    <p>Collection Tracker gives you full control over your data. You can delete your data directly within the app or request account deletion by contacting us.</p>
+
+    <h2>Option 1: Delete Your Data from Within the App</h2>
+
+    <p>You can delete individual collections, items, and images at any time directly within the app. To delete all local data at once:</p>
+
+    <div class="steps">
+        <ol>
+            <li>Open Collection Tracker</li>
+            <li>Tap the <strong>three-dot menu</strong> (⋮) on the main Collections screen</li>
+            <li>Select <strong>Dev Mode</strong></li>
+            <li>Tap <strong>Delete All Data</strong></li>
+            <li>Confirm the deletion when prompted</li>
+        </ol>
+    </div>
+
+    <p>This will permanently delete all collections, items, field values, images, and related data stored locally on your device.</p>
+
+    <h2>Option 2: Request Full Account & Cloud Data Deletion</h2>
+
+    <p>To request complete deletion of your account and all associated cloud data, send an email to:</p>
+
+    <p class="email-link"><a href="mailto:collectiontrackerapp@gmail.com?subject=Account%20Deletion%20Request">collectiontrackerapp@gmail.com</a></p>
+
+    <p>Please include the email address associated with your Collection Tracker account. We will process your request within <strong>30 days</strong>.</p>
+
+    <h2>What Data Gets Deleted</h2>
+
+    <table class="data-table">
+        <tr>
+            <th>Data Type</th>
+            <th>Deleted</th>
+        </tr>
+        <tr>
+            <td>Firebase Authentication account</td>
+            <td>Yes — permanently removed</td>
+        </tr>
+        <tr>
+            <td>Collections, items, and field values (Firestore)</td>
+            <td>Yes — permanently removed</td>
+        </tr>
+        <tr>
+            <td>Photos and images (Firebase Storage)</td>
+            <td>Yes — permanently removed</td>
+        </tr>
+        <tr>
+            <td>Appearance and sync settings (Firestore)</td>
+            <td>Yes — permanently removed</td>
+        </tr>
+        <tr>
+            <td>Subscription status</td>
+            <td>Managed by Google Play — cancel via Google Play subscriptions</td>
+        </tr>
+    </table>
+
+    <div class="warning">
+        <strong>Important:</strong> Account and cloud data deletion is permanent and cannot be undone. Local data on your device is not affected by a cloud deletion request — use Option 1 above to clear local data. If you have an active subscription, please cancel it through the Google Play Store before requesting account deletion.
+    </div>
+
+    <h2>Data Retention</h2>
+
+    <p>Upon receiving a deletion request, all cloud-stored data (Firestore documents, Firebase Storage files, and your Firebase Authentication account) will be permanently deleted within 30 days. No data is retained after deletion is complete.</p>
+
+    <div class="footer">
+        <p><strong>Collection Tracker</strong> — <a href="https://bailong333.github.io/Collection-Tracker---Privacy-Policy/">Privacy Policy</a></p>
+        <p>Contact: <a href="mailto:collectiontrackerapp@gmail.com">collectiontrackerapp@gmail.com</a></p>
+        <p>Last updated: February 2026</p>
+    </div>
+</body>
+</html>
